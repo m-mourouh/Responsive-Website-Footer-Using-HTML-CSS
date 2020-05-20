@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Montserrat";
+}
+:root {
+    --mycolor: rgb(255,0,140)
+}
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background: rgb(21,22,26);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+}
+.text {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 40px auto;
+}
+footer input[type='email']{
+    width: calc(100vw - 40vw);
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 30px 0 0 30px;
+    outline: none;
+    border: none;
+    color: var(--mycolor);
+}
+footer input[type='submit']{
+    border: none;
+    outline: none;
+    border-radius: 0 30px 30px 0;
+    padding: 10px;
+    color: #fff;
+    background: var(--mycolor);
+    font-size: 25px;
+    cursor: pointer;
+}
+footer input:hover[type='submit'] {background: rgb(219, 3, 154);}
+.list-footer {
+    margin: 40px auto;
+    display: flex;
+    list-style-type: none;
+}
+.list-footer li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+}
+.list-footer li a:hover{color: var(--mycolor);}
+
+.social-media {
+    margin: 20px auto;
+}
+.social-media i {
+    padding: 20px;
+    font-size: 25px;
+    color: #fff;
+}
+.social-media i:hover{
+    color: rgb(2,255,171);
+}
+
+@media(max-width:810px){
+    .text ,  footer input[type='email'] ,
+    footer input[type='submit'] {
+        font-size: 20px;
+    }
+    .list-footer li a {
+        padding: 15px;
+        font-size: 15px;
+    }
+    .social-media i {
+        padding: 10px;
+    }
+}
+@media(max-width:610px){
+    .text ,  footer input[type='email'] ,
+    footer input[type='submit'] {
+        font-size: 14px;
+    }
+    .list-footer li a {
+        padding: 10px;
+        font-size: 12px;
+    }
+    .social-media i {
+       font-size: 15px;
+    }
+}
+@media(max-width:470px){
+    .text {
+        font-size: 12px;
+    }
+    .list-footer li a {
+        padding: 5px;
+    }
+}
+@media(max-width:330px){
+    .text {
+        font-size: 10px;
+    }
+}
+
+
+
+
+
